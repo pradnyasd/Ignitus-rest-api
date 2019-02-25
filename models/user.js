@@ -9,8 +9,11 @@ const userSchema = mongoose.Schema({
     match: /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
   },
   password: { type: String },
+
   user_role: { type: String, required: true },
+
   verified: { type: Number, required: true },
+
   verifytoken: { type: String },
   linkedin: {
     profile_url: { type: String },
